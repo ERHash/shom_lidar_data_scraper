@@ -2,9 +2,7 @@
 
 ## Description
 
-Ce projet permet de télécharger des fichiers `.7z` contenant des données Lidar à partir de l'API du SHOM (Service Hydrographique et Océanographique de la Marine) en utilisant une clé API. Le script récupère les informations des pré-packages via un fichier JSON et télécharge ensuite les fichiers associés dans un répertoire local spécifié.
-
-Les données sont utilisées pour des applications telles que la cartographie et l'analyse des fonds marins, en particulier dans le cadre du projet LITTO3D.
+Ce projet permet de télécharger des fichiers `.7z` contenant des données Lidar à partir de l'API du SHOM (Service Hydrographique et Océanographique de la Marine) en utilisant une clé API. Le script récupère les informations des pré-packages via un fichier JSON et télécharge ensuite les fichiers associés dans un répertoire local spécifié (à défaut le dossier d'execution du script).
 
 ## Prérequis
 
