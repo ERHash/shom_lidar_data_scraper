@@ -10,12 +10,19 @@ DATA_DIRECTORY = "L3D_LIDAR_POLYNESIE_BOR_2015_PACK_DL"
 # URL de base de l'API
 BASE_URL = f"https://services.data.shom.fr/{API_KEY}/telechargement/prepackageGroup/{DATA_DIRECTORY}/"
 
-# URL du dossier où se trouvent les fichiers XML (ajustez si nécessaire)
-url_directory = BASE_URL + "prepackage/0635_8180/file/"
+# Structure des url (exemple):
+https://services.data.shom.fr/YourAPIkey/telechargement/prepackageGroup/LITTO3D_BZH_2018_2021_PACK_DL/prepackage/0275_6855/file/0275_6855.7z
+
+# En-têtes HTTP à inclure dans les requêtes
+headers = {
+    'Authorization': f'Bearer {API_KEY}',  # Si nécessaire pour l'authentification
+    'Referer': 'https://services.data.shom.fr',  # Ajustez si nécessaire en fonction de l'API
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',  # User-Agent simulant un navigateur
+}
 
 # Fonction pour récupérer le fichier XML
 def get_xml_file(url):
-    response = requests.get(url)
+    response = requests.get(url, headers=headers)
     
     if response.status_code == 200:
         print(f"Accès réussi à {url}")
@@ -52,7 +59,7 @@ def build_download_link(prepackage_name, metadata_id):
 
 # Fonction pour télécharger un fichier .7z
 def download_file(file_url, file_name):
-    response = requests.get(file_url)
+    response = requests.get(file_url, headers=headers)
     
     if response.status_code == 200:
         print(f"Téléchargement de {file_name} réussi.")
