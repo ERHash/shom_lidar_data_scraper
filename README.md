@@ -72,6 +72,19 @@ Statut de la réponse: 200
   - downloads/                   # Dossier où les fichiers .7z seront téléchargés
 ```
 
+## Amélioration futures 
+
+1. Récupération automatique de la liste des repertoires
+
+2. Suivi du téléchargement avec barre de progression
+Une barre de progression est affichée pendant que les fichiers sont téléchargés, afin de suivre l'état d'avancement du téléchargement.
+
+3. Vérification de la complétude du téléchargement
+Le script vérifie si les fichiers ont été correctement téléchargés en comparant leur taille locale avec celle attendue (obtenue via les en-têtes HTTP de la réponse).
+
+4. Téléchargement en parallèle avec multi-threading
+Les fichiers sont téléchargés en parallèle pour accélérer le processus, en utilisant le module concurrent.futures de Python pour gérer les threads.
+
 ## Remerciements
 
 SHOM pour le partage et la mise en ligne des données.
