@@ -16,7 +16,7 @@ BASE_URL = f"https://services.data.shom.fr/{API_KEY}/telechargement/prepackageGr
 # En-têtes HTTP à inclure dans les requêtes
 headers = {
     'Authorization': f'Bearer {API_KEY}',  # Si nécessaire pour l'authentification
-    'Referer': 'https://services.data.shom.fr',  # Ajustez si nécessaire en fonction de l'API
+    'Referer': 'https://services.data.shom.fr',  # Ajustez si nécessaire en fonction de l'API /!\
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',  # User-Agent simulant un navigateur
 }
 
