@@ -11,7 +11,7 @@ DATA_DIRECTORY = "L3D_LIDAR_POLYNESIE_BOR_2015_PACK_DL"
 BASE_URL = f"https://services.data.shom.fr/{API_KEY}/telechargement/prepackageGroup/{DATA_DIRECTORY}/"
 
 # Structure des url (exemple):
-https://services.data.shom.fr/YourAPIkey/telechargement/prepackageGroup/LITTO3D_BZH_2018_2021_PACK_DL/prepackage/0275_6855/file/0275_6855.7z
+# https://services.data.shom.fr/YourAPIkey/telechargement/prepackageGroup/LITTO3D_BZH_2018_2021_PACK_DL/prepackage/0275_6855/file/0275_6855.7z
 
 # En-têtes HTTP à inclure dans les requêtes
 headers = {
