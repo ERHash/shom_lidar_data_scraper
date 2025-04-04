@@ -3,7 +3,7 @@ import requests
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 
-# Clé API incluse dans l'URL
+# Clé API 
 API_KEY = "YourAPIkey"
 # Répertoire des données (exemple)
 DATA_DIRECTORY = "L3D_LIDAR_POLYNESIE_BOR_2015_PACK_DL"
