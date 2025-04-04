@@ -54,7 +54,7 @@ Le script téléchargera les fichiers `.7z` dans un répertoire `downloads` cré
 
 ## Exemple de sortie
 
-Lors de l'exécution du script, voici ce que tu peux voir dans la console :
+Lors de l'exécution du script, voici ce que l'on peut voir dans la console :
 
 ```
 Accès réussi à https://services.data.shom.fr/YourAPI/telechargement/prepackageGroup/LITTO3D_REUNION_2016_PACK_DL/
